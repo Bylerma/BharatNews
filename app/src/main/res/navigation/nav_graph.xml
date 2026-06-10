@@ -1,0 +1,50 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.trinoka.bharatnews.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.trinoka.bharatnews.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.trinoka.bharatnews.ui.bookmarks.BookmarksFragment"
+        android:label="Saved"
+        tools:layout="@layout/fragment_bookmarks">
+        <action
+            android:id="@+id/action_bookmarksFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.trinoka.bharatnews.ui.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.trinoka.bharatnews.ui.detail.ArticleDetailFragment"
+        android:label="Article Detail">
+        <argument
+            android:name="article"
+            app:argType="com.trinoka.bharatnews.data.model.Article" />
+    </fragment>
+</navigation>

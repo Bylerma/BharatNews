@@ -1,0 +1,33 @@
+<resources>
+    <!-- Primary: Saffron-inspired warm orange -->
+    <color name="primary">#E8500A</color>
+    <color name="primary_dark">#BF3D00</color>
+    <color name="primary_light">#FF7043</color>
+
+    <!-- Surface -->
+    <color name="background">#F8F5F0</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#FFF3ED</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#5C5C5C</color>
+    <color name="text_hint">#9E9E9E</color>
+
+    <!-- Categories (vibrant Indian palette) -->
+    <color name="cat_politics">#D32F2F</color>   <!-- Red -->
+    <color name="cat_business">#1565C0</color>   <!-- Blue -->
+    <color name="cat_sports">#2E7D32</color>     <!-- Green -->
+    <color name="cat_tech">#6A1B9A</color>        <!-- Purple -->
+    <color name="cat_entertainment">#E91E63</color> <!-- Pink -->
+    <color name="cat_health">#00695C</color>      <!-- Teal -->
+    <color name="cat_science">#F57F17</color>     <!-- Amber -->
+
+    <!-- Accent -->
+    <color name="accent">#FFB300</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="card_shadow">#1A000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

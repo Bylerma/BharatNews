@@ -1,0 +1,101 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+}
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
+android {
+    namespace 'com.trinoka.bharatnews'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.trinoka.bharatnews"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+    // UI
+    implementation libs.activity.ktx
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    implementation libs.recyclerview
+    implementation libs.swiperefreshlayout
+
+    // Navigation
+    implementation libs.navigation.fragment.ktx
+    implementation libs.navigation.ui.ktx
+
+    // ViewModel + LiveData
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.lifecycle.livedata.ktx
+
+    // Networking
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    implementation libs.okhttp.logging
+
+    // Image Loading
+    implementation libs.glide
+    kapt libs.glide.compiler
+
+    // Room
+    implementation libs.room.runtime
+    implementation libs.room.ktx
+    kapt libs.room.compiler
+
+    // Coroutines
+    implementation libs.coroutines.android
+
+    // Shimmer
+    implementation libs.shimmer
+
+    // Lottie
+    implementation libs.lottie
+
+    // DataStore
+    implementation libs.datastore.preferences
+
+    // Browser
+    implementation libs.browser
+
+    // Pagination
+    implementation libs.paging.runtime.ktx
+
+    // Splash Screen
+    implementation libs.core.splashscreen
+
+    // Razorpay
+    implementation 'com.razorpay:checkout:1.6.38'
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

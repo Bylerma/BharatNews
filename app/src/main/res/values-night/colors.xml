@@ -1,0 +1,10 @@
+<resources>
+    <!-- Dark mode -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="surface_variant">#2C2C2C</color>
+
+    <color name="text_primary">#E1E1E1</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_hint">#757575</color>
+</resources>

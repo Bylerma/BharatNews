@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">भारत न्यूज़</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="premium_subscription">प्रीमियम सब्सक्रिप्शन</string>
+    <string name="subscription_desc">विज्ञापन-मुक्त समाचार और विशेष सामग्री प्राप्त करें।</string>
+    <string name="subscribe_for_1">₹1 में सब्सक्राइब करें</string>
+    <string name="general">सामान्य</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="app_language">ऐप की भाषा</string>
+    <string name="english">अंग्रेजी</string>
+    <string name="hindi">हिंदी</string>
+    <string name="reader_text_size">टेक्स्ट का आकार</string>
+    <string name="breaking_news_alerts">ब्रेकिंग न्यूज अलर्ट</string>
+    <string name="clear_cache">कैश साफ़ करें</string>
+    <string name="home">होम</string>
+    <string name="search">खोजें</string>
+    <string name="saved">सेव किया हुआ</string>
+    <string name="live">लाइव</string>
+    <string name="trending_now">ट्रेंडिंग समाचार 📈</string>
+    <string name="latest_news">ताज़ा समाचार</string>
+    <string name="search_hint">समाचार खोजें…</string>
+    <string name="read_more">ब्राउज़र में और पढ़ें</string>
+    <string name="article_detail">समाचार विवरण</string>
+</resources>
