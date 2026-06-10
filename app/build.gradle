@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
+    id 'com.google.gms.google-services'
 }
 apply plugin: 'kotlin-parcelize'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
@@ -93,6 +94,10 @@ dependencies {
 
     // Razorpay
     implementation 'com.razorpay:checkout:1.6.38'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:34.14.0')
+    implementation 'com.google.firebase:firebase-analytics'
 
     // Testing
     testImplementation libs.junit
